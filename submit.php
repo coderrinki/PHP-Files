@@ -4,22 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body{
-            background-color: pink;
-        }
-        .phpcont{
-            background-color:beige;
-            display:flex;
-            justify-content:center
-        }
-    </style>
+   <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <div class="phpcont">
-   <h1>Welcome</h1>
-    <h3>
         <?php
+        echo "<h1>Welcome</h1><br>";
          echo "<br><br>".$_POST['firstname']."<br>";
          echo "<br>................................................................................";
          echo "<br>****************************************";
@@ -77,7 +68,7 @@ echo "<br>After swapping: ";
 echo "<br>a=".$n3;
 echo "<br>b=".$n4;
          ?>
-         </h3>
+
          </div>
         </body>
 </html>
