@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculater.css">
+</head>
+
+<body>
+    <div class="container">
+        <form action="calculater.php" method="post">
+            <input type="number" name="num1" placeholder="number1">
+            <input type="number" name="num2" placeholder="number2">
+            <select class="options" name="operation">
+            <option value="addition">Addition</option>
+            <option value="subtraction">Subtraction</option>
+            <option value="multiplication">Multiplication</option>
+            <option value="division">Division</option>
+        </select>
+            <input type="submit" value="submit">
+            <input type="reset" value="cancel">
+        </form>
+    </div>
+</body>
+
+</html>
