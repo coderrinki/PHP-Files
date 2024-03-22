@@ -67,6 +67,57 @@ $n3 = $n3- $n4;
 echo "<br>After swapping: ";
 echo "<br>a=".$n3;
 echo "<br>b=".$n4;
+
+echo "<br>................................................................................";
+echo "<br>****************************************";
+
+//Greeting Message according to its time;
+date_default_timezone_set('Asia/Kolkata');  
+$current_time=date('h:i:s');
+
+if($current_time>=12) {
+    echo "<br>Good Morning";
+} else if ($current_time <=17){
+    echo "<br>Good Afternoon";
+}else if( $current_time <= 19 ) {
+    echo "<br>Good Evening";
+}else{
+    echo "<br>Good Night";
+}
+
+echo "<br>................................................................................";
+echo "<br>****************************************";
+//vowel check
+$vowel=array('a','e', 'i','o','u');
+$consonant=array('b','c','d','f','g','h','j','k','l','m','n','p','q','r','s','t','v','w','x','y','z');
+$ch="hi im rinki saha";
+$count=0;
+$count1=0;
+$cont='';
+$cont1='';
+for($i=0; $i<strlen($ch); $i++){
+    if (in_array($ch[$i], $vowel)) {
+        $count++;
+        $cont = $cont." ".$ch[$i];
+    }
+    else if(in_array($ch[$i], $consonant)){
+        $count1++;
+        $cont1 = $cont1." ".$ch[$i];
+    }
+}
+echo "<br> The number of vowels are: ".$count;
+echo "<br> The vowels are: ".$cont;
+echo "<br> The number of consonant are: ".$count1;
+echo "<br> The consonants are: ".$cont1;
+
+
+
+
+
+
+
+
+
          ?>
 
          </div>
