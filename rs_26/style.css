@@ -1,0 +1,58 @@
+/* body{
+    background-color: rgb(210, 140, 227);
+        } */
+.container{
+    background-color: rgb(128, 224, 99);
+    width:100%;
+    height:100%;
+    justify-content: center;
+    display: flex;
+    margin-top: 20px;
+}
+.container input[type="text"]{
+    width: 300px;
+    height: 50px;
+    display: flex;
+    border: 5px solid pink;
+    margin: 12px;
+    padding: 10px;
+    border-radius: 20px;
+}
+.container input[type="number"]{
+    width: 300px;
+    height: 50px;
+    display: flex;
+    border: 5px solid pink;
+    margin: 12px;
+    padding: 10px;
+    border-radius: 20px;
+}
+.container input::placeholder{
+    text-align: center;
+    font-weight: bolder;
+}
+.container input[type="submit"]{
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    /* display: flex; */
+    justify-content: center;
+    border: 5px solid pink;
+}
+.container input[type="reset"]{
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    /* display: flex; */
+    justify-content: center;
+    border: 5px solid pink;
+}
+/* body{
+    background-color: aqua;
+} */
+
+.phpcont{
+    background-color:rgb(246, 242, 238);
+    display:flex;
+    justify-content:center
+}
