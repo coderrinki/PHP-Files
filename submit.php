@@ -90,7 +90,7 @@ echo "<br>****************************************";
 //vowel check
 $vowel=array('a','e', 'i','o','u');
 $consonant=array('b','c','d','f','g','h','j','k','l','m','n','p','q','r','s','t','v','w','x','y','z');
-$ch="hi im rinki saha";
+$ch=$_POST['text'];
 $count=0;
 $count1=0;
 $cont='';
@@ -118,7 +118,29 @@ echo "<br> The consonants are: ".$cont1;
 
 
 
-         ?>
+
+      $num= $_POST['unit'];
+      $totalbill=0;
+     if($num <=50){
+        $totalbill= $num * 3.50;
+        echo "<br>Total amount of ".$num." unit is Rs.".$totalbill;
+     }
+
+     elseif ($num >50 && $num <=150) {
+        $totalbill= 50 * 3.50 + ($num - 50) * 4.00;
+        echo "<br>Total amount of ".$num." unit is Rs.".$totalbill;
+     }
+
+     elseif ($num >150 && $num <=250) {
+        $totalbill= 50 * 3.50 + 100 * 4.00 + ($num - 150) * 4.20;
+        echo "<br>Total amount of ".$num." unit is Rs.".$totalbill;
+     }
+
+     else {
+        $totalbill= 50 * 3.50 + 100 * 4.00 + 100 * 4.20 + ($num - 250) * 6.50;
+        echo "<br>Total amount of ".$num." unit is Rs.".$totalbill;
+     }
+    ?>
 
          </div>
         </body>
